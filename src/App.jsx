@@ -1,16 +1,22 @@
 import './App.css'
 import SwitchReel from './SwitchReel'
-import BACKGROUNDS from './data/DATA'
+import resources from './data/DATA'
+
 
 function App() {
-
+  const { BACKGROUNDS, CLOUDS } = resources;
 
   return (
     <>
-        <p>This is my react project</p>
         <SwitchReel 
-          categoryName={"Test"}
+          categoryName={"Background"}
           data={BACKGROUNDS}
+          zindex={-1}
+        />
+        <SwitchReel 
+          categoryName={"Clouds"}
+          data={CLOUDS}
+          zindex={1}
         />
 
     </>
