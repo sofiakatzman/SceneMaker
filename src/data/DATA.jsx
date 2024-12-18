@@ -24,4 +24,60 @@ const CLOUDS = [
   { id: 4, name: 'Cloud 4', src: clouds4 },
 ];
 
-export default { BACKGROUNDS, CLOUDS };
+// atmosphere
+import atmosphere1 from "../assets/atmospheres/atmosphere1.png";
+import atmosphere2 from "../assets/atmospheres/atmosphere2.png";
+import atmosphere3 from "../assets/atmospheres/atmosphere3.png";
+import atmosphere4 from "../assets/atmospheres/atmosphere4.png";
+
+const ATMOSPHERES = [
+  { id: 1, name: 'Atmosphere 1', src: atmosphere1 },
+  { id: 2, name: 'Atmosphere 2', src: atmosphere2 },
+  { id: 3, name: 'Atmosphere 3', src: atmosphere3 },
+  { id: 4, name: 'Atmosphere 4', src: atmosphere4 },
+];
+
+// interests
+import interest1 from "../assets/interests/interest1.png";
+import interest2 from "../assets/interests/interest2.png";
+import interest3 from "../assets/interests/interest3.png";
+import interest4 from "../assets/interests/interest4.png";
+
+const INTERESTS = [
+  { id: 1, name: 'Interest 1', src: interest1 },
+  { id: 2, name: 'Interest 2', src: interest2 },
+  { id: 3, name: 'Interest 3', src: interest3 },
+  { id: 4, name: 'Interest 4', src: interest4 },
+];
+
+// botanicals
+import botanical1 from "../assets/botanicals/botanical1.png";
+import botanical2 from "../assets/botanicals/botanical2.png";
+import botanical3 from "../assets/botanicals/botanical3.png";
+import botanical4 from "../assets/botanicals/botanical4.png";
+
+const BOTANICALS = [
+  { id: 1, name: 'Botanical 1', src: botanical1 },
+  { id: 2, name: 'Botanical 2', src: botanical2 },
+  { id: 3, name: 'Botanical 3', src: botanical3 },
+  { id: 4, name: 'Botanical 4', src: botanical4 },
+];
+
+// ground
+import ground1 from "../assets/ground/ground1.png";
+import ground2 from "../assets/ground/ground2.png";
+import ground3 from "../assets/ground/ground3.png";
+import ground4 from "../assets/ground/ground4.png";
+
+const GROUNDS = [
+  { id: 1, name: 'Ground 1', src: ground1 },
+  { id: 2, name: 'Ground 2', src: ground2 },
+  { id: 3, name: 'Ground 3', src: ground3 },
+  { id: 4, name: 'Ground 4', src: ground4 },
+];
+
+
+
+
+
+export default { BACKGROUNDS, CLOUDS, ATMOSPHERES, INTERESTS, BOTANICALS, GROUNDS };
