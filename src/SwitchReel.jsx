@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function SwitchReel({ categoryName, data, zindex }) {
+function SwitchReel({ categoryName, data, zindex, buttonHeight }) {
   const [item, setItem] = useState(0);
 
   //Navigation Functions
@@ -21,8 +21,9 @@ function SwitchReel({ categoryName, data, zindex }) {
   }
 
   return (
+  
     <>
-      <img
+    <img
         src={data[item].src}
         alt={`${categoryName} ${item}`}
         style={{ 
@@ -32,24 +33,31 @@ function SwitchReel({ categoryName, data, zindex }) {
             left: 0,
          }}
       />
-           <div className="nav-buttons" style={{ position: 'relative', bottom: '10px', left: '10px', zIndex: 1000,}}>
+    <div  className="reel"
+          style={{ 
+            top: `${buttonHeight}px`,
+      }}>
+      
+           <div className="nav-buttons">
 
         <button 
             className="nav-button"
             onClick={goBack}>
-                Back
+                ←
         </button>
 
-        <p>
-          {categoryName}: Item {item}
+        <p
+          className="nav-name">
+          {categoryName}
         </p>
 
         <button 
             className="nav-button"
             onClick={goForth}>
-                Forward
+                →
         </button>
       </div>
+    </div>
     </>
   );
 }
